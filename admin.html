@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Créer un groupe</title>
+  </head>
+  <body>
+    <h1>Créer un groupe</h1>
+    <form action="/create_group" method="POST">
+      <label for="name">Nom du groupe:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description"><br><br>
+      <label for="members">Nombre d'utilisateurs:</label>
+      <input type="number" id="members" name="members" min="1" required><br><br>
+      <label for="groups">Nombre de groupes:</label>
+      <input type="number" id="groups" name="groups" min="1" required><br><br>
+      <label for="last_group">Configuration du dernier groupe:</label>
+      <select id="last_group" name="last_group" required>
+        <option value="LAST_MIN">Moins d'utilisateurs</option>
+        <option value="LAST_MAX">Plus d'utilisateurs</option>
+        <option value="NO_IMPACT">Pas d'impact</option>
+      </select><br><br>
+      <label for="permissions">Autorisations:</label>
+      <input type="text" id="permissions" name="permissions"><br><br>
+      <label for="privacy">Confidentialité:</label>
+      <input type="checkbox" id="privacy" name="privacy"><br><br>
+      <input type="submit" value="Créer le groupe">
+    </form>
+  </body>
+</html>
+

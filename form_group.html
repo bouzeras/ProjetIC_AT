@@ -1,0 +1,14 @@
+<h1>Créer un nouveau groupe</h1>
+<form action="/form_group" method="POST">
+    <label for="group_name">Nom du groupe :</label>
+    <input type="text" name="group_name" required><br>
+    <label for="description">Description :</label>
+    <textarea name="description"></textarea><br>
+    <label for="members">Membres autorisés à rejoindre :</label>
+    <input type="text" name="members"><br>
+    <label for="access_permissions">Permissions d'accès :</label>
+    <input type="text" name="access_permissions"><br>
+    <label for="privacy_settings">Paramètres de confidentialité :</label>
+    <input type="text" name="privacy_settings"><br>
+    <button type="submit">Créer</button>
+</form>
